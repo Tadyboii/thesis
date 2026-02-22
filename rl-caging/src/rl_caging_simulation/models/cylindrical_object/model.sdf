@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="central_cylinder">
+    <pose>0 0 2 0 0 0</pose> <!-- Half height (0.15m) above ground -->
+
+    <link name="link">
+      <inertial>
+        <mass>1000.0</mass>
+        <inertia>
+          <!-- For solid cylinder: 
+               Ixx = Iyy = (1/12)*m*(3r² + h²)
+               Izz = (1/2)*m*r² -->
+          <ixx>0.1292</ixx>
+          <iyy>0.1292</iyy>
+          <izz>0.25</izz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.5</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <laser_retro>300</laser_retro>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.5</radius>
+            <length>0.3</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.2 0.6 0.9 1</ambient>
+          <diffuse>0.2 0.6 0.9 1</diffuse>
+        </material>
+        <laser_retro>300</laser_retro>
+      </visual>
+    </link>
+  </model>
+</sdf>

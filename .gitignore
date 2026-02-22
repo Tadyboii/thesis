@@ -1,0 +1,23 @@
+# Virtual environments
+.venv/
+.venv2/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Build / install / log artifacts (ROS2/colcon)
+build/
+install/
+log/
+
+# VS Code
+.vscode/
+
+# Misc
+*.so
+*.o

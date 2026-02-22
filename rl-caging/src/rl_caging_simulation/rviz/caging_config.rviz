@@ -1,0 +1,53 @@
+<viz>
+  <Displays>
+    <Display type="rviz_default_plugins/Grid">
+      <Enabled>true</Enabled>
+    </Display>
+    <Display type="rviz_default_plugins/TF">
+      <Enabled>true</Enabled>
+      <Show Axes>true</Show Axes>
+      <Show Arrows>true</Show Arrows>
+      <Show Names>true</Show Names>
+    </Display>
+    <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot1/scan</Topic>
+        <Size>0.05</Size>
+        <Color>255; 0; 0</Color>
+    </Display>
+     <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot2/scan</Topic>
+        <Size>0.05</Size>
+        <Color>0; 255; 0</Color>
+    </Display>
+     <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot3/scan</Topic>
+        <Size>0.05</Size>
+        <Color>0; 0; 255</Color>
+    </Display>
+     <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot4/scan</Topic>
+        <Size>0.05</Size>
+        <Color>255; 255; 0</Color>
+    </Display>
+     <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot5/scan</Topic>
+        <Size>0.05</Size>
+        <Color>0; 255; 255</Color>
+    </Display>
+     <Display type="rviz_default_plugins/LaserScan">
+        <Enabled>true</Enabled>
+        <Topic>/diff_drive_robot6/scan</Topic>
+        <Size>0.05</Size>
+        <Color>255; 0; 255</Color>
+    </Display>
+  </Displays>
+  <Global Options>
+    <Fixed Frame>diff_drive_robot1/odom</Fixed>
+    <Frame Rate>30</Frame Rate>
+  </Global Options>
+</viz>

@@ -1,0 +1,8 @@
+# Gazebo Fuel Tools configuration with NO remote servers.
+# This file ensures the simulation runs fully offline by preventing
+# gz-fuel-tools from contacting fuel.gazebosim.org.
+# Referenced via GZ_FUEL_SERVER_CONFIG_PATH in empty_world.launch.py.
+---
+servers: []
+cache:
+  path: /tmp/gz-fuel-cache
