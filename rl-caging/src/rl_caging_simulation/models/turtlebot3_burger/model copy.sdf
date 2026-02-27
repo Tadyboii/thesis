@@ -121,10 +121,10 @@
       <visual name="lidar_sensor_visual">
         <pose>-0.032 0 0.171 0 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/sensors/lds.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.0508</radius>
+            <length>0.055</length>
+          </cylinder>
         </geometry>
         <material>
           <ambient>0.2 0.2 0.2 1.0</ambient>

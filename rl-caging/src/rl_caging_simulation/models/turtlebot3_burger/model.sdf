@@ -30,12 +30,11 @@
       </collision>
 
       <visual name="base_visual">
-        <pose>-0.032 0 0 0 0 0</pose>
+        <pose>-0.032 0 0.070 0 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/bases/burger_base.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <box>
+            <size>0.14 0.14 0.14</size>
+          </box>
         </geometry>
         <material>
           <ambient>0.3 0.3 0.3 1.0</ambient>
@@ -121,10 +120,10 @@
       <visual name="lidar_sensor_visual">
         <pose>-0.032 0 0.171 0 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/sensors/lds.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.0508</radius>
+            <length>0.055</length>
+          </cylinder>
         </geometry>
         <material>
           <ambient>0.2 0.2 0.2 1.0</ambient>
@@ -210,12 +209,12 @@
       </collision>
 
       <visual name="wheel_left_visual">
-        <pose>0 0.08 0.023 0 0 0</pose>
+        <pose>0 0.08 0.023 -1.57 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/wheels/left_tire.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.033</radius>
+            <length>0.018</length>
+          </cylinder>
         </geometry>
         <material>
           <ambient>0.2 0.2 0.2 1.0</ambient>
@@ -272,12 +271,12 @@
       </collision>
 
       <visual name="wheel_right_visual">
-        <pose>0.0 -0.08 0.023 0 0 0</pose>
+        <pose>0.0 -0.08 0.023 -1.57 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/wheels/right_tire.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.033</radius>
+            <length>0.018</length>
+          </cylinder>
         </geometry>
         <material>
           <ambient>0.2 0.2 0.2 1.0</ambient>
@@ -428,10 +427,10 @@
 
       <visual name="lidar_sensor_visual">
         <geometry>
-          <mesh>
-            <uri>model://turtlebot3_common/meshes/sensors/lds.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.0508</radius>
+            <length>0.055</length>
+          </cylinder>
         </geometry>
         <material>
           <ambient>0.2 0.2 0.2 1.0</ambient>
