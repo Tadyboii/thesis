@@ -1,9 +1,10 @@
 # Virtual environments
 .venv/
 .venv2/
-venv/
-env/
-
+env/__pycache__/
+env/build/
+env/install/
+env/log/
 # Python cache
 __pycache__/
 *.py[cod]
